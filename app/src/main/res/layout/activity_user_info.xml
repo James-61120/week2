@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/darkgray"
+        android:id="@+id/userInfoTB"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:background="@color/darkgray"
+        android:fillViewport="true"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Information"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="30dp"
+                android:text="Update information"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Họ tên"
+                android:layout_marginBottom="20dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/userinfoName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/useraccountscreen_ic_person_outline_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:text="Quang Thiên"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Giới tính"
+                android:layout_marginBottom="20dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/userinfoGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/useraccountscreen_ic_tag_faces_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:text="nam"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mô tả"
+                android:layout_marginBottom="20dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/userinfoDescript"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/useraccountscreen_ic_description_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:text="mô tả"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Số điện thoại"
+                android:layout_marginBottom="10dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/userinfoPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/useraccountscreen_ic_phone_android_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:text="012345678"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Địa chỉ"
+                android:layout_marginBottom="20dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/userinfoAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/useraccountscreen_ic_location_on_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:text="012345678"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/ProfileUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button"
+                android:fontFamily="sans-serif"
+                android:padding="0dp"
+                android:text="Update"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
